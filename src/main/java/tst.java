@@ -53,7 +53,9 @@ public class tst {
 ////            driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox-active sprite-side']//i[text()='Apple']")).click();
 ////        }
 
-        //lol
+
+
+        //TST
 
 //        driver.quit();
 
