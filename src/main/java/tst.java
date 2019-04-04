@@ -1,7 +1,4 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -47,14 +44,19 @@ public class tst {
         action.perform();
         */
 
-        driver.navigate().to("https://rozetka.com.ua/mobile-phones/c80003/producer=samsung/");
-        if (!driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox sprite-side']//i[text()='Apple']")).isSelected()) {
-            driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox sprite-side']//i[text()='Apple']")).click();
-        }
+//        driver.navigate().to("https://rozetka.com.ua/mobile-phones/c80003/producer=samsung/");
+////        if (!driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox sprite-side']//i[text()='Apple']")).isSelected()) {
+////            driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox sprite-side']//i[text()='Apple']")).click();
+////        }
+////
+////        if (driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox-active sprite-side']//i[text()='Apple']")).isSelected()){
+////            driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox-active sprite-side']//i[text()='Apple']")).click();
+////        }
 
-        if (driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox-active sprite-side']//i[text()='Apple']")).isSelected()){
-            driver.findElement(By.xpath("//span[@class='filter-parametrs-i-l-i-text filter-parametrs-i-l-i-checkbox-active sprite-side']//i[text()='Apple']")).click();
-        }
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript()
+
+
 //        driver.quit();
 
     }
